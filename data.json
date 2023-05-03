@@ -1,0 +1,82 @@
+[
+  {
+    "cover": "https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Data Entry for Beginners",
+    "instructor": "John Smith",
+    "duration": "8 weeks",
+    "rating": 4.5,
+    "description": "Learn the basics of data entry, including typing techniques, data organization, and accuracy. Perfect for those who want to work in administrative or clerical positions.",
+    "price": 99,
+    "student": 500
+  },
+  {
+    "cover": "https://images.pexels.com/photos/5125251/pexels-photo-5125251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Arabic for Beginners",
+    "instructor": "Fatima Ahmed",
+    "duration": "12 weeks",
+    "rating": 4.8,
+    "description": "Learn the basics of Arabic, including the Arabic alphabet, pronunciation, and common phrases. Perfect for those who want to travel to or work in Arabic-speaking countries.",
+    "price": 149,
+    "student": 1000
+  },
+  {
+    "cover": "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Quantum Mechanics Fundamentals",
+    "instructor": "Dr. Sarah Johnson",
+    "duration": "8 weeks",
+    "rating": 4.9,
+    "description": "Learn the basics of Quantum Mechanics, including wave-particle duality, quantum states, and measurement. Perfect for those who want to pursue a career in physics or related fields.",
+    "price": 199,
+    "student": 500
+  },
+  {
+    "cover": "https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Machine Learning 101",
+    "instructor": "Dr. Albert wilson",
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "description": "Learn the basics of Machine Learning, including supervised and unsupervised learning, decision trees, and neural networks. Perfect for those who want to pursue a career in data science or related fields.",
+    "price": 222,
+    "student": 1000
+  },
+  {
+    "cover": "https://images.pexels.com/photos/8613054/pexels-photo-8613054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Painting Masterclass",
+    "instructor": "Ms. Jane Doe",
+    "duration": "12 weeks",
+    "rating": 4.8,
+    "description": "Learn the fundamentals of painting and develop your skills in color theory, composition, and technique. This course is perfect for beginners and intermediate artists looking to improve their skills and express themselves through their artwork.",
+    "price": 249,
+    "student": 250
+  },
+  {
+    "cover": "https://images.pexels.com/photos/7256900/pexels-photo-7256900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Fashion Design for Beginners",
+    "instructor": "Ms. Sarah Lee",
+    "duration": "8 weeks",
+    "rating": 4.5,
+    "description": "Learn the basics of fashion design, including sketching, pattern-making, and garment construction. This course is perfect for beginners who want to explore their creativity and learn the skills needed to pursue a career in fashion.",
+    "price": 199,
+    "student": 500
+  },
+  {
+    "cover": "https://images.pexels.com/photos/306763/pexels-photo-306763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Introduction to Photography",
+    "instructor": "Mr. William jack",
+    "duration": "10 weeks",
+    "rating": 4.7,
+    "description": "Learn the basics of photography, including composition, lighting, and exposure. This course is perfect for beginners who want to improve their photography skills and learn how to take great photos.",
+    "price": 249,
+    "student": 300
+  },
+  {
+    "cover": "https://images.pexels.com/photos/4793154/pexels-photo-4793154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "title": "Writing Compelling Articles and Blog Posts",
+    "instructor": "Ms. Mary Herper",
+    "duration": "6 weeks",
+    "rating": 4.8,
+    "description": "Learn how to write compelling articles and blog posts that engage your audience and drive traffic to your website. This course covers topics such as headline writing, content structure, and search engine optimization.",
+    "price": 149,
+    "student": 200
+  }
+]
