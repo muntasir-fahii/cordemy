@@ -5,9 +5,11 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      <div className="bg-slate-100">
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      </div>
     </>
   );
 }

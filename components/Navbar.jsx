@@ -20,7 +20,7 @@ const Navbar = () => {
             Courses
           </Link>
           <Link
-            href="/about"
+            href={"/about"}
             className="nav-link hover:text-lime-500 duration-300"
           >
             About
@@ -29,7 +29,7 @@ const Navbar = () => {
             href="/testimonials"
             className="nav-link hover:text-lime-500 duration-300"
           >
-            Testimonilas
+            Testimonials
           </Link>
           <Link
             href="/contact"
