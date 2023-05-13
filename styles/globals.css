@@ -3,3 +3,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #e2e8f0;
+}
+
+.wrapper {
+  @apply container mx-auto px-5 lg:px-0;
+}
+
+/* navbar */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #84cc16;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* transform: translateX(0); */
+  transition: 0.3s;
+}
+.nav-link:hover::after {
+  width: 120%;
+}
