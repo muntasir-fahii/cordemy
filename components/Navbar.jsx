@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaContao } from "react-icons/fa";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -41,8 +42,8 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <div className="flex items-center font-medium bg-black py-2 px-5 text-white rounded-md hover:bg-indigo-700 duration-300 hover:border hover:border-gray-400">
-          <Link href="login">Login</Link>
+        <div>
+          <Button href="/login" placeholder="Sign in" />
         </div>
       </div>
     </div>
