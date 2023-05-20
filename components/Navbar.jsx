@@ -43,7 +43,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div>
-          <Button href="/login" placeholder="Sign in" />
+          <Button
+            href="/login"
+            placeholder="Sign in"
+            color="primary"
+            size="default"
+          />
         </div>
       </div>
     </div>

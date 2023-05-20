@@ -1,12 +1,12 @@
 import { currencyConverter } from "@/utils/currencyConverter";
 import Image from "next/image";
-import Link from "next/link";
+
 import { AiOutlineStar } from "react-icons/ai";
 import Button from "./Button";
 
 const Courses = ({ course }) => {
   return (
-    <div className="w-full lg:w-[30rem] shadow-md rounded-md overflow-hidden">
+    <div className="course w-full lg:w-[30rem] shadow-md rounded-md overflow-hidden hover:shadow-lg duration-100">
       <div className="w-full h-[25rem] lg:h-[20rem] overflow-hidden">
         <Image
           src={course.cover}
@@ -14,7 +14,7 @@ const Courses = ({ course }) => {
           width={640}
           height={360}
           priority
-          className="w-full  h-full object-cover "
+          className="w-full  h-full object-cover"
         ></Image>
       </div>
 
@@ -56,7 +56,12 @@ const Courses = ({ course }) => {
           <p className="text-lg font-semibold">
             {currencyConverter(course.price)}
           </p>
-          <Button href={`/courses/${course.id}`} placeholder="View Details" />
+          <Button
+            href={`/courses/${course.id}`}
+            placeholder="View Details"
+            color="primary"
+            size="medium"
+          />
         </div>
       </div>
     </div>

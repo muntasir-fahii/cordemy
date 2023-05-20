@@ -27,3 +27,11 @@
 .nav-link:hover::after {
   width: 120%;
 }
+
+.course {
+  transition: all 1s ease;
+}
+
+.course:hover {
+  transform: scale(1.02);
+}
