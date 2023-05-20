@@ -40,7 +40,7 @@ const CourseDetail = ({ course }) => {
             Price: {currencyConverter(course.price)}
           </p>
           <Button
-            href="/checkcout"
+            href={`/checkout/${course.id}`}
             placeholder="Enroll Now"
             color="primary"
             size="full"
