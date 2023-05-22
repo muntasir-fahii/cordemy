@@ -1,7 +1,11 @@
-import SectionTitle from "@/components/SectionTitle";
 import { getCourse } from "@/prisma/courses";
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
+import { loadStripe } from "@stripe/stripe-js";
+import axios from "axios";
+
+/* STRIPE PROMISE*/
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
 const Checkout = ({ course }) => {
   const { data: session } = useSession();
@@ -25,8 +29,31 @@ const Checkout = ({ course }) => {
     }
   }, [session]);
 
+  /* CHECKOUT HANDLER*/
   const handleCheckout = async (e) => {
     e.preventDefault();
+
+    const stripe = await stripePromise;
+
+    /* SEND A POST REQ TO THE SERVER */
+    const checkoutSession = await axios.post("/api/create-checkout-session", {
+      items: [course],
+      name: formdata.name,
+      email: formdata.email,
+      mobile: formdata.mobile,
+      address: formdata.address,
+      courseTitle: formdata.courseTitle,
+    });
+
+    /* REDIRECT TO THE STRIPE PAYMENT */
+
+    const result = await stripe.redirectToCheckout({
+      sessionId: checkoutSession.data.id,
+    });
+
+    if (result.error) {
+      console.log(result.error.message);
+    }
   };
 
   return (
@@ -93,6 +120,7 @@ const Checkout = ({ course }) => {
               Phone Number:
             </label>
             <input
+              required
               type="tel"
               id="mobile"
               placeholder="+8801xxxxxxx"
@@ -112,6 +140,7 @@ const Checkout = ({ course }) => {
               Address:
             </label>
             <input
+              required
               type="text"
               id="address"
               placeholder="ABC street,NY"
@@ -159,7 +188,7 @@ const Checkout = ({ course }) => {
           <button
             role="link"
             type="submit"
-            className="uppercase bg-indigo-600 text-white py-3 rounded-lg w-full hover:bg-indigo-700 duration-300"
+            className="uppercase bg-indigo-600 text-white py-2 rounded-lg w-full hover:bg-indigo-700 duration-300"
           >
             Procced to Checkout
           </button>
