@@ -43,6 +43,7 @@ const Checkout = ({ course }) => {
       mobile: formdata.mobile,
       address: formdata.address,
       courseTitle: formdata.courseTitle,
+      courseId: course.id,
     });
 
     /* REDIRECT TO THE STRIPE PAYMENT */
