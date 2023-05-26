@@ -20,12 +20,21 @@ const Navbar = () => {
           >
             Home
           </Link>
+
           <Link
             href="/courses"
             className="nav-link hover:text-indigo-600 duration-300"
           >
             Courses
           </Link>
+          {session && (
+            <Link
+              href="/orders"
+              className="nav-link hover:text-indigo-600 duration-300"
+            >
+              Orders
+            </Link>
+          )}
           <Link
             href={"/about"}
             className="nav-link hover:text-indigo-600 duration-300"

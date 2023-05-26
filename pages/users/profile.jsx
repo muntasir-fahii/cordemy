@@ -25,7 +25,7 @@ const ProfilePage = ({ session }) => {
   }
 
   return (
-    <div className="min-h-screen wrapper  flex flex-col items-center">
+    <div className="min-h-screen wrapper  flex flex-col items-center  mt-24">
       <Image
         src={session.user.image}
         alt={session.user.name}

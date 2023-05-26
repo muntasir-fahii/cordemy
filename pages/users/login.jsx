@@ -28,7 +28,7 @@ const LoginPage = ({ session }) => {
 
   if (!session) {
     return (
-      <div className="wrapper py-10 min-h-screen">
+      <div className="wrapper py-10 min-h-screen ">
         <SectionTitle
           span={"Login"}
           h2={"Get Started With Google"}
