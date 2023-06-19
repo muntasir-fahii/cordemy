@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { BsEnvelopeFill } from "react-icons/bs";
@@ -25,10 +26,12 @@ const Hero = () => {
         </Link>
       </div>
       <div className="col-span-1 relative">
-        <img
+        <Image
           src="https://images.pexels.com/photos/1326946/pexels-photo-1326946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="hero-img"
-          className="object-fill overflow-hidden"
+          height={500}
+          width={500}
+          className="w-[60rem] object-fit overflow-hidden"
         />
         <div className="absolute -bottom-14 left-52 bg-white/75  rounded-lg py-5 px-7 z-30 grid justify-center it<ems-center text-center">
           <div
