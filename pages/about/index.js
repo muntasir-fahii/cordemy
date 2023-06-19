@@ -1,7 +1,8 @@
+import About from "@/components/About";
 import React from "react";
 
 const index = () => {
-  return <div>AboutPage</div>;
+  return <About />;
 };
 
 export default index;

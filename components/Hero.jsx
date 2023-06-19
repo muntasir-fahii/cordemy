@@ -18,7 +18,7 @@ const Hero = () => {
         </p>
         <Link
           href="/courses"
-          className="uppercase bg-indigo-600 text-white py-2 px-10 w-1/4 text-center rounded-2xl font-medium hover:text-white hover:bg-indigo-700 duration-300
+          className="uppercase bg-indigo-600 text-white py-2 px-10 w-1/4 text-center rounded-lg font-medium hover:text-white hover:bg-indigo-700 duration-300
       "
         >
           get courses
