@@ -106,7 +106,7 @@ const Checkout = ({ course }) => {
             <input
               type="email"
               id="email"
-              placeholder="exampl.com"
+              placeholder="example.com"
               readOnly
               value={formdata.email}
               className="outline-none bg-transparent border border-gray-300 p-1 rounded-md"
@@ -186,6 +186,7 @@ const Checkout = ({ course }) => {
               className="outline-none bg-transparent border border-gray-300 p-1 rounded-md"
             />
           </div>
+
           <button
             role="link"
             type="submit"
