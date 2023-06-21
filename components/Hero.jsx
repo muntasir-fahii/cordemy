@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { AiOutlineCalendar } from "react-icons/ai";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdInsertChart } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className=" h-[90vh]  p-10 mx-auto grid items-center justify-center grid-cols-2 gap-2">
+    <div className=" h-[90vh]  p-10 mx-auto grid items-center justify-center grid-cols-1 lg:grid-cols-2 gap-2 mb-60 lg:mb-10">
       <div className="grid gap-5 col-span-1 ">
         <h1 className="text-5xl font-semibold  w-">
           <span className="text-indigo-700">Studying</span> Online is now <br />

@@ -17,7 +17,7 @@ const Testimonials = ({ testimonial }) => {
           <div className="grid space-y-3 p-2 items-center justify-center">
             <div className="grid mt-2 gap-1">
               <FaQuoteLeft />
-              <p className="w-[24rem] h-60">{testimonial.para}</p>
+              <p className="w-[24rem] h-60 justify-start">{testimonial.para}</p>
               <FaQuoteRight />
             </div>
             <p className="text-base font-medium tracking-wider">
