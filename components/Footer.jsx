@@ -36,16 +36,13 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-1">
           <p className="text-indigo-500 text-lg font-semibold">Sevices</p>
-          <Link
-            href="/courses"
-            className="nav-link hover:text-indigo-600 duration-300"
-          >
+          <Link href="/courses" className=" hover:text-indigo-600 duration-300">
             Courses
           </Link>
           {session && (
             <Link
               href="/orders"
-              className="nav-link hover:text-indigo-600 duration-300"
+              className=" hover:text-indigo-600 duration-300"
             >
               Orders
             </Link>
@@ -53,21 +50,18 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-1">
           <p className="text-indigo-500 text-lg font-semibold">Company</p>
-          <Link
-            href="/about"
-            className="nav-link hover:text-indigo-600 duration-300"
-          >
+          <Link href="/about" className=" hover:text-indigo-600 duration-300">
             About
           </Link>
           <Link
             href="/testimonials"
-            className="nav-link hover:text-indigo-600 duration-300"
+            className=" hover:text-indigo-600 duration-300"
           >
             Testimonials
           </Link>
           <Link
-            href="/faq"
-            className="nav-link hover:text-indigo-600 duration-300"
+            href="/users/faq"
+            className=" hover:text-indigo-600 duration-300"
           >
             FAQs
           </Link>
