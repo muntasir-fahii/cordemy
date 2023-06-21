@@ -25,11 +25,11 @@
   transition: 0.3s;
 }
 .nav-link:hover::after {
-  width: 120%;
+  width: 100%;
 }
 
 .course {
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .course:hover {
@@ -50,7 +50,6 @@
 .faq-content {
   height: 0;
   overflow: hidden;
-  /* transition: all 0.3s ease; */
 }
 
 .faq-content-show {

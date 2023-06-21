@@ -16,10 +16,11 @@ const Footer = () => {
           </div>
           <div>
             <p className="w-1/2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Corporis, unde reiciendis placeat, dolore consequatur nesciunt,
-              pariatur repudiandae optio voluptatem beatae quia amet quo
-              sapiente itaque aspernatur tenetur ex explicabo quod?
+              Where knowledge meets opportunity. Elevate your skills and unleash
+              your potential with our cutting-edge e-learning platform. Discover
+              a world of interactive courses, expert instructors, and limitless
+              possibilities. Join Cordemy today and embark on a unique learning
+              adventure tailored to your aspirations.
             </p>
           </div>
           <div className="flex gap-2">
@@ -47,6 +48,9 @@ const Footer = () => {
               Orders
             </Link>
           )}
+          <Link href="/contact" className=" hover:text-indigo-600 duration-300">
+            Contact
+          </Link>
         </div>
         <div className="flex flex-col gap-1">
           <p className="text-indigo-500 text-lg font-semibold">Company</p>

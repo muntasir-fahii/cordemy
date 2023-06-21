@@ -52,7 +52,7 @@ const Faqs = ({}) => {
     <div
       // data-aos="fade-up"
       // data-aos-duration="1000"
-      className="container mx-auto justify-center items-center p-16 min-h-screen "
+      className="container mx-auto justify-center items-center p-16 min-h-screen  border-r-indigo-500"
     >
       <SectionTitle
         span="FAQs"
@@ -71,11 +71,11 @@ const Faqs = ({}) => {
           >
             <div className="flex justify-between" onClick={() => toggle(i)}>
               <h3 className="text-lg font-semibold">{faq.question}</h3>
-              <span className="cursor-pointer">
+              <span className="cursor-pointer ">
                 {selected === i ? (
-                  <GrFormSubtract className="text-2xl duration-300" />
+                  <GrFormSubtract className="text-2xl " />
                 ) : (
-                  <GrFormAdd className="text-2xl duration-300" />
+                  <GrFormAdd className="text-2xl" />
                 )}
               </span>
             </div>
