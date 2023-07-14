@@ -22,7 +22,7 @@ const SuccessPage = ({ session }) => {
       <div className="bg-white/40 flex flex-col rounded-lg shadow-md h-1/2 w-[35rem] mt-20">
         <div className=" flex flex-col items-center  gap-5 mt-24">
           <h2 className="text-2xl text-center">
-            You've enrolled in this course!
+            {` You've enrolled in this course!`}
           </h2>
           <AiOutlineCheckCircle className="text-4xl text-emerald-600" />
           <Button href="/orders" placeholder="Go to orders " />
