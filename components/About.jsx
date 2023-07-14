@@ -4,9 +4,19 @@ import SectionTitle from "./SectionTitle";
 const About = () => {
   return (
     <>
-      <div className="wrapper py-10 min-h-full ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="700"
+        className="wrapper py-10 min-h-full "
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="overflow-hidden justify-center items-center mx-auto">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            className="overflow-hidden justify-center items-center mx-auto"
+          >
             <Image
               src="https://images.pexels.com/photos/4497785/pexels-photo-4497785.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="image"
@@ -83,7 +93,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="grid  gap-5 ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="grid  gap-5 "
+        >
           <div className="mt-40">
             <p>
               {`   Seamless E-commerce Experience: Cordemy understands that learning
@@ -124,7 +138,11 @@ const About = () => {
               experience Cordemy today!`}
             </p>
           </div>
-          <div className="overflow-hidden justify-center items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="700"
+            className="overflow-hidden justify-center items-center"
+          >
             <Image
               src="https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="image"
@@ -133,7 +151,7 @@ const About = () => {
               className="overflow-hidden h-full w-full object-cover"
             />
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="500">
             <p>
               {`  In conclusion, Cordemy is a groundbreaking e-commerce website that
               merges the worlds of education and online shopping. By offering a

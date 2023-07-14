@@ -4,7 +4,12 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 const Testimonials = ({ testimonial }) => {
   return (
     <div>
-      <div className="grid md:grid-cols-1 lg:grid-cols-2 shadow-md rounded-tl-3xl rounded-bl-3xl rounded-br-3xl bg-indigo-500 text-white px-5 mb-5 justify-center p-5">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="100"
+        className="grid md:grid-cols-1 lg:grid-cols-2 shadow-md rounded-tl-3xl rounded-bl-3xl rounded-br-3xl bg-indigo-500 text-white px-5 mb-5 justify-center p-5"
+      >
         <div className="flex  justify-between space-x-3">
           <Image
             priority
@@ -17,7 +22,9 @@ const Testimonials = ({ testimonial }) => {
           <div className="grid space-y-3 p-2 items-center justify-center">
             <div className="grid mt-2 gap-1">
               <FaQuoteLeft />
-              <p className="w-[24rem] h-60 justify-start">{testimonial.para}</p>
+              <p className="w-full lg:w-[24rem] h-[29rem] lg:h-60 justify-start">
+                {testimonial.para}
+              </p>
               <FaQuoteRight />
             </div>
             <p className="text-base font-medium tracking-wider">

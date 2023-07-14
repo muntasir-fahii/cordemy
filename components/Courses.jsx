@@ -6,7 +6,12 @@ import Button from "./Button";
 
 const Courses = ({ course }) => {
   return (
-    <div className="course w-full lg:w-[30rem] shadow-md rounded-md overflow-hidden hover:shadow-lg duration-100">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+      className="course w-full lg:w-[30rem] shadow-md rounded-md overflow-hidden hover:shadow-lg duration-100"
+    >
       <div className="w-full h-[25rem] lg:h-[20rem] overflow-hidden">
         <Image
           src={course.cover}

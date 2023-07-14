@@ -9,16 +9,26 @@ const Hero = () => {
   return (
     <div className=" h-[90vh] p-10 mx-auto grid items-center justify-center grid-cols-1 lg:grid-cols-2 gap-2  mb-16 md:mb-72 lg:mb-10">
       <div className="grid gap-5 col-span-1 ">
-        <h1 className="text-5xl font-semibold  w-">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-5xl font-semibold overflow-hidden"
+        >
           <span className="text-indigo-700">Studying</span> Online is now <br />
           much easier
         </h1>
 
-        <p className="text-lg w-1/2">
+        <p
+          // data-aos="zoom-in"
+          // data-aos-duration="1000"
+          className="text-lg w-1/2"
+        >
           Cordemy in as intersting platform that will teach you in more an
           interactive way
         </p>
         <Link
+          // data-aos="zoom-in"
+          // data-aos-duration="1000"
           href="/courses"
           className="uppercase bg-indigo-600 text-white py-1 lg:py-2 px-5 lg:px-10 w-1/2 lg:w-1/4 text-center rounded-lg font-medium hover:text-white hover:bg-indigo-700 duration-300
       "
@@ -26,7 +36,11 @@ const Hero = () => {
           get courses
         </Link>
       </div>
-      <div className="col-span-1 relative">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        className="col-span-1 relative"
+      >
         <Image
           src="https://images.pexels.com/photos/1326946/pexels-photo-1326946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="hero-img"

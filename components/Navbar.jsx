@@ -8,7 +8,7 @@ const Navbar = () => {
   const { data: session } = useSession();
   const [open, setOpen] = useState(false);
 
-  const handlemenu = () => {
+  const handleMenu = () => {
     setOpen((prev) => !prev);
   };
   const handleOpen = () => {
@@ -16,8 +16,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-20 flex items-center ">
-      <nav className="wrapper flex justify-between items-center w-[92%] mx-auto">
+    <div className="h-20 flex justify-between items-center ">
+      <nav className="wrapper flex justify-between items-center mx-auto">
         <div className="  py-2 px-3 rounded-l-full font-bold flex items-center gap-1 text-xl ">
           <FaContao className="bg-indigo-500 text-black " />
           <Link href="/">Cordemy</Link>
@@ -97,8 +97,8 @@ const Navbar = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            onClick={handlemenu}
-            className="inline-flex  absolute right-0 top-6  focus:outline-none   p-2 z-[999]"
+            onClick={handleMenu}
+            className="inline-flex absolute right-6 top-5 focus:outline-none p-2 z-[999]"
           >
             <span className="sr-only">Open Main Menu</span>
             {open == true ? (

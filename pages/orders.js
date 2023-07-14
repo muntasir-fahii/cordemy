@@ -23,14 +23,23 @@ const Orderspage = ({ session, customer }) => {
 
   return (
     <div className="wrapper py-10 min-h-screen">
-      <div className="flex items-center gap-2 ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="flex items-center gap-2 "
+      >
         <BiCustomize className="text-3xl text-indigo-600" />
         <h2 className="text-3xl font-medium">
           You Enrolled: {customer.orders.length} Course
           {customer.orders.length > 1 ? "s" : ""}
         </h2>
       </div>
-      <div className="courses grid gap-5 mt-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        className="courses grid gap-5 mt-5"
+      >
         {customer.orders.map((course) => (
           <div
             key={course.id}

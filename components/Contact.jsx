@@ -2,7 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="wrapper py-10 h-full ">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="wrapper py-10 h-full "
+    >
       <div className="grid bg-white justify-center items-center mt-10 gap-5 p-16 w-1/2 mx-auto rounded-md">
         <div
           className="relative img flex flex-col justify-center items-center  h-36"

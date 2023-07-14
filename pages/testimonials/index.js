@@ -105,7 +105,7 @@ const settings = {
 
 const index = () => {
   return (
-    <div className="wrapper py-10 min-h-full ">
+    <div className="wrapper py-10 min-h-screen">
       <SectionTitle span="Testimonials" h2="Students Thrive with e-Learning" />
       <div>
         <Slider {...settings}>

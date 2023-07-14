@@ -1,6 +1,10 @@
 const SectionTitle = ({ span, h2, p }) => {
   return (
-    <div className="felx  items-center flex-col text-center gap-2">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="felx  items-center flex-col text-center gap-2 overflow-hidden"
+    >
       <span className="uppercase text-sm font-bold tracking-widest text-indigo-600">
         {span}
       </span>

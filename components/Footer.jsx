@@ -7,7 +7,7 @@ const Footer = () => {
   const { data: session } = useSession();
 
   return (
-    <div className="wrapper py-10 h-full ">
+    <div className="wrapper py-10">
       <div>
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
           <div className="grid col-span-2 gap-2 items-center w-1/2">
